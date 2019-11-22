@@ -112,12 +112,10 @@ namespace ProgrammingAssignment_5
             if (savingsBalance % 1 == 0)// No decimals
             {
                 Console.Write(savingsBalance + "\t \t \t");
-
             }
             else // Decimals places
             {                 
                 Console.Write(savingsBalance.ToString("f9") + "\t \t");
-
             }
 
             Console.WriteLine(annualInterestRate.ToString());           
