@@ -107,9 +107,10 @@ namespace ProgrammingAssignment_5
         public void PrintSavingsAccount()
         {
             Console.Write(savingsAccountName + "\t \t");
-            
-            // This statement will align the columns of each instance properly           
-            if (savingsBalance % 1 == 0)// No decimals
+
+            // Because doubles get truncated when non-zero numbers are far on the right side,
+            // this statement will align the columns of each instance properly.             
+            if (savingsBalance % 1 == 0)// No decimals (integers)
             {
                 Console.Write(savingsBalance + "\t \t \t");
             }
